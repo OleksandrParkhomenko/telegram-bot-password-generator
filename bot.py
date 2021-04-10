@@ -1,5 +1,6 @@
 from telebot import TeleBot, types
 import messages
+import config
 from password_generator import PasswordGenerator
 
 token = config.config['token']
