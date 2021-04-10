@@ -3,9 +3,8 @@ import messages
 import config
 from password_generator import PasswordGenerator
 
-token = config.config['token']
 
-bot = TeleBot(token)
+bot = TeleBot(config.config['token'])
 defaultGenerator = PasswordGenerator()
 generator = PasswordGenerator()
 
