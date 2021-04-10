@@ -2,8 +2,7 @@ from telebot import TeleBot, types
 import messages
 from password_generator import PasswordGenerator
 
-import os
-token = os.environ.get('token')
+token = config.config['token']
 
 bot = TeleBot(token)
 defaultGenerator = PasswordGenerator()
